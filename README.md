@@ -26,14 +26,14 @@ This example is a [NextJS](https://nextjs.org/) todo app that uses
 
 - [Provision a Postgres container on Railway](https://dev.new)
 - Connect to your Railway project with `railway link`
-- Migrate the database `railway run yarn migrate:dev`
-- Run the NextJS app `railway run yarn dev`
+- Migrate the database `railway run npm run migrate:dev`
+- Run the NextJS app `railway run npm run dev`
 
 ## 📝 Notes
 
 This app is a simple todo list where the data is persisted to Postgres. [Prisma
 migrations](https://www.prisma.io/docs/concepts/components/prisma-migrate#prisma-migrate)
-can be created with `railway run yarn migrate:dev` and deployed with `railway run yarn migrate:deploy`. The Prisma client can be regenerated with
-`yarn generate`.
+can be created with `railway run npm run migrate:dev` and deployed with `railway run npm run migrate:deploy`. The Prisma client can be regenerated with
+`npm run generate`.
 
 [swr](https://swr.vercel.app/) is used to fetch data on the client and perform optimistic updates.
